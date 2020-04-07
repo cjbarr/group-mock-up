@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {withRouter} from 'react-router-dom';
 
 
 class Project extends Component {
@@ -12,7 +13,7 @@ class Project extends Component {
 
     render() {
         return (
-            <div>
+            <div className="home">
                 <h1>This is your project!</h1>
                 <h2>What you've got coming up next:</h2>
                 <h4>A lot of things that we don't know yet</h4>
@@ -27,4 +28,4 @@ class Project extends Component {
 }
 
 
-export default Project;
+export default withRouter(Project);
